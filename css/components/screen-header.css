@@ -1,0 +1,47 @@
+.screen-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--horizontal-space);
+  margin-top: 35px;
+  margin-bottom: 15px;
+}
+
+.screen-header__title {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+@keyframes screenheadericonAnimation {
+  0% {
+    transform: none;
+  }
+
+  50% {
+    transform: translateY(-3px) rotateY(20deg);
+  }
+
+  100% {
+    transition: none;
+  }
+}
+
+.screen-header__icons span i {
+  margin-left: 20px;
+  position: relative;
+  animation: screenheadericonAnimation 2s ease-in-out infinite;
+}
+
+@keyframes rotageCog {
+  from {
+    transform: none;
+  }
+
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+.screen-header__icons .fa-cog:hover {
+  animation: rotageCog 2s linear infinite;
+}
