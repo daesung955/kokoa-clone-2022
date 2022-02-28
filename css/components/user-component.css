@@ -21,12 +21,12 @@
 
 .user-component__title {
   font-weight: 600;
-  font-size: 22px;
+  font-size: 19px;
 }
 
 .user-component__subtitle {
   margin-top: 8px;
-  font-size: 17px;
+  font-size: 15px;
   color: rgba(0, 0, 0, 0.5);
 }
 
@@ -55,4 +55,11 @@
 .user-component__time {
   margin-bottom: 10px;
   display: block;
+}
+
+.user-component-userfive,
+.user-component-userfour,
+.user-component-userthree,
+.user-component-usertwo {
+  margin-top: 30px;
 }
